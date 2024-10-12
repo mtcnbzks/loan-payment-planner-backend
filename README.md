@@ -40,6 +40,11 @@ These instructions will help you set up and run the project on your local machin
        hibernate:
          ddl-auto: update
    ```
+3. Initialize the database:
+
+   ```sh
+   psql -U your_username -d your_database -a -f src/main/resources/schema.sql
+   ```
 
 ## Run
 
