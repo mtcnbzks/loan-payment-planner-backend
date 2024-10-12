@@ -7,7 +7,7 @@ Loan Payment Planner is a Spring Boot application designed to manage and plan lo
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Running the Application](#running-the-application)
+- [Run](#run)
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ These instructions will help you set up and run the project on your local machin
 
    ```sh
    git clone <repository-url>
-   cd loan-payment-planner
+   cd loan-payment-planner-backend
    ```
 
 2. Configure the PostgreSQL database in `src/main/resources/application.yml`:
@@ -41,17 +41,13 @@ These instructions will help you set up and run the project on your local machin
          ddl-auto: update
    ```
 
-3. Build the project using Maven:
+## Run
+
+1. Package the project using Maven:
    ```sh
-   mvn clean install
+   mvn package
    ```
-
-## Running the Application
-
-To run the application, use the following command:
-
-```sh
-mvn spring-boot:run
-```
-
-The application will start on http://localhost:8080.
+2. Run the jar file:
+   ```sh
+   java -jar target/loan-payment-planner-0.0.1-SNAPSHOT.jar
+   ```
